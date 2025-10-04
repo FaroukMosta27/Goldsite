@@ -52,7 +52,7 @@
 <body>
   <header>
     <h1>Gold & Silver Live Prices</h1>
-    <p>USD, EUR – Powered by MetalPriceAPI</p>
+    <p>USD, EUR </p>
   </header>
   <main>
     <h2>Current Prices</h2>
@@ -91,7 +91,7 @@
         d.setDate(d.getDate() - i);
         let dateStr = d.toISOString().split("T")[0];
 
-        // ??????? ??????? ±2%
+        // ??????? ??????? Â±2%
         let gold = basePriceGold * (1 + (Math.random() - 0.5) / 25);
         let silver = basePriceSilver * (1 + (Math.random() - 0.5) / 25);
 
@@ -155,4 +155,5 @@
     render();
   </script>
 </body>
+
 </html>
